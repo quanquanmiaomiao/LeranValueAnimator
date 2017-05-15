@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         height = layout.getHeight();
         ValueAnimator animator = ValueAnimator.ofInt(height, 0, height / 4, height / 2, height / 4 * 3, height);
         animator.setDuration(6000);
-        animator.setRepeatMode(2);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
@@ -70,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
         final float scale = 0.5f;
         final ValueAnimator animator = ValueAnimator.ofFloat(1.0f, scale);
         animator.setDuration(1500);
-        animator.setRepeatMode(3);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
