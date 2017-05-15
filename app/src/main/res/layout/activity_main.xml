@@ -29,12 +29,6 @@
         android:onClick="onBtn3"
         android:text="动画三"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:onClick="onBtn4"
-        android:text="动画四"/>
 
     <ImageView
         android:id="@+id/img"

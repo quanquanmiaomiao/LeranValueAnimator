@@ -35,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
         raAnimator();
     }
 
-    public void onBtn4(View v) {
-        raAnimator();
-    }
 
     // 一个修改ImageView位置的方法
     private void moveImg(View view, int rawX, int rawY) {
@@ -53,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         width = layout.getWidth();
         height = layout.getHeight();
         ValueAnimator animator = ValueAnimator.ofInt(height, 0, height / 4, height / 2, height / 4 * 3, height);
-        animator.setDuration(3000);
+        animator.setDuration(6000);
         animator.setRepeatMode(2);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -72,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     private void scaleAnimator() {
         final float scale = 0.5f;
         final ValueAnimator animator = ValueAnimator.ofFloat(1.0f, scale);
-        animator.setDuration(500);
+        animator.setDuration(1500);
         animator.setRepeatMode(3);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
